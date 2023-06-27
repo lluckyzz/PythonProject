@@ -131,6 +131,8 @@ Enter your choice :paper
 |Computer's point :  1         |
 |______________________________|
 
-Conguratulation!!!!!!!  You win ."""
+Conguratulation!!!!!!!  You win .
+
+"""
 
 
