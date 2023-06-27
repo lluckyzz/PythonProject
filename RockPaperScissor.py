@@ -1,125 +1,153 @@
 import random
-i=True
-while i==True:
+userCount=0
+compCount=0
+roundCount=1
+i=0
+while i<5:
     print()
-    print("Rock\nPaper\nScissors \nexit")
+    print("_______________________________________")
+    print("_______________Round ",roundCount,"_______________")
+    print()
+    print("Rock\nPaper\nScissors")
     player = input("Enter your choice :")
     player1= player.capitalize()
+
     
     print()
     possible_action=["Rock","Paper","Scissors"]
     computer=random.choice(possible_action)
 
     if player1 == computer:
-        print("____________________________________________")
-        print("Tie!")
-        print("____________________________________________")
-        print()
+        print("-> Tie!")
 
 
 
     elif player1 == "Rock":
         if computer == "Paper":
-            print("____________________________________________")
-            print("You lose!", computer, "covers", player)
-            print("____________________________________________")
-            print()
+            compCount+=1
+            print("-> Computer's point ,", computer, "covers", player)
         else:
-            print("____________________________________________")
-            print("You win!", player, "smashes", computer)
-            print("____________________________________________")
-            print()
+            userCount+=1
+            print("-> Your Point , ", player, "smashes", computer)
+
 
 
 
     elif player1 == "Paper":
         if computer == "Scissors":
-            print("____________________________________________")
-            print("You lose!", computer, "cut", player)
-            print("____________________________________________")
-            print()
+            compCount+=1
+            print("-> Computer's point , ", computer, "cut", player)
         else:
-            print("____________________________________________")
-            print("You win!", player, "covers", computer)
-            print("____________________________________________")
-            print()
+            userCount+=1
+            print("-> Your Point , ", player, "covers", computer)         
 
 
 
     elif player1 == "Scissors":
         if computer == "Rock":
-            print("____________________________________________")
-            print("You lose...", computer, "smashes", player)
-            print("____________________________________________")
-            print()
+            compCount+=1
+            print("-> Computer's point ,", computer, "smashes", player)
         else:
-            print("You win!", player, "cut", computer)
-            print()
-            
+            userCount+=1            
+            print("-> Your Point , ", player, "cut", computer)        
 
-
-    elif  player1=="Exit":
-        print("code exitted !!!!")
-        i=False
 
 
     else:
-        print("That's not a valid play. Check your spelling!")
-        print()
+        print("-> That's not a valid play. Check your spelling!\n   and play again")
+        roundCount-=1
+        i-=1
+    print("_______________________________________")
+    i+=1
+    roundCount+=1
+    print()
+
+
+print(" ______________________________")
+print("|         Point Table          |")
+print("|______________________________|")
+print("|Your point       : ",userCount,"        |")
+print("|Computer's point : ",compCount,"        |")
+print("|______________________________|")
+print()
+if(userCount<compCount):
+    print("You lose , better luck next time ")
+elif(userCount>compCount):
+    print("Conguratulation!!!!!!!  You win .")
+else:
+    print("Tie !!!!")
 
 
 
 
 # Output---------->>>>>>>>>
 """
+_______________________________________
+_______________Round  1 _______________
+
 Rock
 Paper
-Scissors 
-exit
+Scissors
 Enter your choice :rock
 
-____________________________________________
-You win! rock smashes Scissors
-____________________________________________
+-> Your Point ,  rock smashes Scissors
+_______________________________________
 
+
+_______________________________________
+_______________Round  2 _______________
 
 Rock
 Paper
-Scissors 
-exit
+Scissors
+Enter your choice :rock
+
+-> Your Point ,  rock smashes Scissors
+_______________________________________
+
+
+_______________________________________
+_______________Round  3 _______________
+
+Rock
+Paper
+Scissors
 Enter your choice :paper
 
-____________________________________________
-You lose! Scissors cut paper
-____________________________________________
+-> Your Point ,  paper covers Rock
+_______________________________________
 
 
-Rock
-Paper
-Scissors 
-exit
-Enter your choice :scissor
-
-That's not a valid play. Check your spelling!
-
+_______________________________________
+_______________Round  4 _______________
 
 Rock
 Paper
-Scissors 
-exit
+Scissors
 Enter your choice :scissors
 
-____________________________________________
-You lose... Rock smashes scissors
-____________________________________________
+-> Tie!
+_______________________________________
 
+
+_______________________________________
+_______________Round  5 _______________
 
 Rock
 Paper
-Scissors 
-exit
-Enter your choice :exit
+Scissors
+Enter your choice :rock
 
-code exitted !!!!"""
+-> Computer's point , Paper covers rock
+_______________________________________
+
+ ______________________________
+|         Point Table          |
+|______________________________|
+|Your point       :  3         |
+|Computer's point :  1         |
+|______________________________|
+
+Conguratulation!!!!!!!  You win ."""
 
 
