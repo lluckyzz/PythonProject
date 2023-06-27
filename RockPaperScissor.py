@@ -4,7 +4,6 @@ compCount=0
 roundCount=1
 i=0
 while i<5:
-    print()
     print("_______________________________________")
     print("_______________Round ",roundCount,"_______________")
     print()
@@ -57,10 +56,8 @@ while i<5:
         print("-> That's not a valid play. Check your spelling!\n   and play again")
         roundCount-=1
         i-=1
-    print("_______________________________________")
     i+=1
     roundCount+=1
-    print()
 
 
 print(" ______________________________")
@@ -92,34 +89,16 @@ Enter your choice :rock
 
 -> Your Point ,  rock smashes Scissors
 _______________________________________
-
-
-_______________________________________
 _______________Round  2 _______________
-
-Rock
-Paper
-Scissors
-Enter your choice :rock
-
--> Your Point ,  rock smashes Scissors
-_______________________________________
-
-
-_______________________________________
-_______________Round  3 _______________
 
 Rock
 Paper
 Scissors
 Enter your choice :paper
 
--> Your Point ,  paper covers Rock
+-> Computer's point ,  Scissors cut paper
 _______________________________________
-
-
-_______________________________________
-_______________Round  4 _______________
+_______________Round  3 _______________
 
 Rock
 Paper
@@ -128,23 +107,27 @@ Enter your choice :scissors
 
 -> Tie!
 _______________________________________
-
-
-_______________________________________
-_______________Round  5 _______________
+_______________Round  4 _______________
 
 Rock
 Paper
 Scissors
 Enter your choice :rock
 
--> Computer's point , Paper covers rock
+-> Tie!
 _______________________________________
+_______________Round  5 _______________
 
+Rock
+Paper
+Scissors
+Enter your choice :paper
+
+-> Your Point ,  paper covers Rock
  ______________________________
 |         Point Table          |
 |______________________________|
-|Your point       :  3         |
+|Your point       :  2         |
 |Computer's point :  1         |
 |______________________________|
 
