@@ -4,8 +4,8 @@ compCount=0
 roundCount=1
 i=0
 while i<5:
-    print("_______________________________________")
-    print("_______________Round ",roundCount,"_______________")
+    print("______________________________________________")
+    print("___________________Round",roundCount,"___________________")
     print()
     print("Rock\nPaper\nScissors")
     player = input("Enter your choice :")
@@ -17,17 +17,17 @@ while i<5:
     computer=random.choice(possible_action)
 
     if player1 == computer:
-        print("-> Tie!")
+        print("->> Tie!")
 
 
 
     elif player1 == "Rock":
         if computer == "Paper":
             compCount+=1
-            print("-> Computer's point ,", computer, "covers", player)
+            print("->> Computer's point ,", computer, "covers", player)
         else:
             userCount+=1
-            print("-> Your Point , ", player, "smashes", computer)
+            print("->> Your Point , ", player, "smashes", computer)
 
 
 
@@ -35,30 +35,30 @@ while i<5:
     elif player1 == "Paper":
         if computer == "Scissors":
             compCount+=1
-            print("-> Computer's point , ", computer, "cut", player)
+            print("->> Computer's point , ", computer, "cut", player)
         else:
             userCount+=1
-            print("-> Your Point , ", player, "covers", computer)         
+            print("->> Your Point , ", player, "covers", computer)         
 
 
 
     elif player1 == "Scissors":
         if computer == "Rock":
             compCount+=1
-            print("-> Computer's point ,", computer, "smashes", player)
+            print("->> Computer's point ,", computer, "smashes", player)
         else:
             userCount+=1            
-            print("-> Your Point , ", player, "cut", computer)        
+            print("->> Your Point , ", player, "cut", computer)        
 
 
 
     else:
-        print("-> That's not a valid play. Check your spelling!\n   and play again")
+        print("That's not a valid play. Check your spelling!\n   and play again")
         roundCount-=1
         i-=1
     i+=1
     roundCount+=1
-print("_______________________________________")
+print("_____________________________________________")
 print()
 
 print(" ______________________________")
@@ -80,60 +80,62 @@ else:
 
 # Output---------->>>>>>>>>
 """
-_______________________________________
-_______________Round  1 _______________
+______________________________________________
+___________________Round 1 ___________________
 
 Rock
 Paper
 Scissors
 Enter your choice :rock
 
--> Your Point ,  rock smashes Scissors
-_______________________________________
-_______________Round  2 _______________
+->> Your Point ,  rock smashes Scissors
+______________________________________________
+___________________Round 2 ___________________
 
 Rock
 Paper
 Scissors
 Enter your choice :paper
 
--> Computer's point ,  Scissors cut paper
-_______________________________________
-_______________Round  3 _______________
+->> Computer's point ,  Scissors cut paper
+______________________________________________
+___________________Round 3 ___________________
 
 Rock
 Paper
 Scissors
 Enter your choice :scissors
 
--> Tie!
-_______________________________________
-_______________Round  4 _______________
+->> Your Point ,  scissors cut Paper
+______________________________________________
+___________________Round 4 ___________________
 
 Rock
 Paper
 Scissors
 Enter your choice :rock
 
--> Tie!
-_______________________________________
-_______________Round  5 _______________
+->> Tie!
+______________________________________________
+___________________Round 5 ___________________
 
 Rock
 Paper
 Scissors
 Enter your choice :paper
-_______________________________________
 
+->> Your Point ,  paper covers Rock
+_____________________________________________
 
--> Your Point ,  paper covers Rock
  ______________________________
 |         Point Table          |
 |______________________________|
-|Your point       :  2         |
+|Your point       :  3         |
 |Computer's point :  1         |
 |______________________________|
 
-Conguratulation!!!!!!!  You win ."""
+Conguratulation!!!!!!!  You win .
+
+"""
 
 
