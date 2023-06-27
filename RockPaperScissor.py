@@ -58,7 +58,8 @@ while i<5:
         i-=1
     i+=1
     roundCount+=1
-
+print("_______________________________________")
+print()
 
 print(" ______________________________")
 print("|         Point Table          |")
@@ -122,6 +123,8 @@ Rock
 Paper
 Scissors
 Enter your choice :paper
+_______________________________________
+
 
 -> Your Point ,  paper covers Rock
  ______________________________
@@ -131,8 +134,6 @@ Enter your choice :paper
 |Computer's point :  1         |
 |______________________________|
 
-Conguratulation!!!!!!!  You win .
-
-"""
+Conguratulation!!!!!!!  You win ."""
 
 
